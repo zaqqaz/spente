@@ -8,8 +8,7 @@
   flex-direction: column;
 
   .select-date-range {
-    background: #2278F0;
-    border-top: 1px solid #fff;
+    background: #1a65ce;
     height: 60px;
     max-height: 60px;
     display: flex;
@@ -23,16 +22,15 @@
       flex: 1;
       border: 2px solid rgba(255, 255, 255, 0.25);
       border-radius: 100px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding: 0;
       font-size: 14px;
-      line-height: 18px;
       color: #FFFFFF;
+      line-height: 36px;
       height: 39px;
       width: 98px;
       text-align: center;
-      padding-top: 9px;
       margin-right: 15px;
+
       &:last-child {
         margin-right: 0;
       }
@@ -40,6 +38,17 @@
         background: #fff;
         border-color: #fff;
         color: #262A30;
+      }
+    }
+
+    @media (max-width: 450px) {
+      height: 40px;
+      max-height: 40px;
+
+      .btn {
+        line-height: 20px;
+        height: 24px;
+        width: 75px;
       }
     }
   }
@@ -51,6 +60,9 @@
     height: 100%;
     > div {
       flex: 1;
+    }
+    @media (max-width: 450px) {
+      flex-direction: column;
     }
   }
 
