@@ -23,3 +23,9 @@ md-sidenav-layout, .md-sidenav-content {
 .md-sidenav-backdrop.md-sidenav-shown{
   background-color: rgba(0, 0, 0, 0.1);
 }
+
+.hide-on-phone{
+  @media (max-width: 450px) {
+    display: none !important;
+  }
+}
